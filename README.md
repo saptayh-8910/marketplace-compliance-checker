@@ -2,7 +2,7 @@
 ---
 
 ```markdown
-# Marketplace Compliance Checker 🛡️🤖
+# Marketplace Compliance Checker 
 
 This document analyzer is an autonomous, multi-agent compliance and security auditing system engineered to analyze marketplace product listings (Shopify, Amazon Japan, Mercari) before publication. 
 
@@ -10,7 +10,7 @@ By leveraging agentic orchestration, the system evaluates product images, promot
 
 ---
 
-## 🏗️ System Architecture & Data Flow
+##  System Architecture & Data Flow
 
 This platform utilizes a specialized multi-agent hierarchy to ensure separate areas of concern, high-precision retrieval, and deterministic evaluation loops.
 
@@ -50,7 +50,7 @@ This platform utilizes a specialized multi-agent hierarchy to ensure separate ar
 
 ---
 
-## ✨ Core Features
+##  Core Features
 
 * **Multi-Agent Auditing Core:** Distributed execution split between visual asset inspection (Vision LLM) and listing copy verification (Semantic LLM).
 * **Platform-Specific Rule Engines:** Tailored validation layers matching guidelines for **Amazon JP**, **Mercari**, and international storefronts (Shopify, Etsy).
@@ -59,7 +59,7 @@ This platform utilizes a specialized multi-agent hierarchy to ensure separate ar
 
 ---
 
-## 🛠️ Technical Stack
+##  Technical Stack
 
 * **Orchestration Framework:** Python-native agentic framework (Google Antigravity / Google Stitch / LangChain / n8n)
 * **Inference Engines:** Anthropic Claude (via `ChatAnthropic`) for structural semantic synthesis and high-token reasoning.
@@ -68,7 +68,7 @@ This platform utilizes a specialized multi-agent hierarchy to ensure separate ar
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Prerequisites & Environment Setup
 
@@ -110,7 +110,7 @@ streamlit run app.py
 
 ---
 
-## 📊 Evaluation & Verification (LLMOps Baseline)
+##  Evaluation & Verification (LLMOps Baseline)
 
 AgenticSentry measures accuracy using rigorous multi-turn evaluation frameworks. The underlying scoring model measures **Faithfulness**, **Answer Relevancy**, and **Context Precision**.
 
@@ -127,6 +127,6 @@ Current System Benchmarks (`ragas_results.json`):
 * **Context Precision:** Testing implementation under `v2.0` architecture optimizations.
 ---
 
-## 📝 License
+##  License
 
 Distributed under the MIT License. See `LICENSE` for more information.
