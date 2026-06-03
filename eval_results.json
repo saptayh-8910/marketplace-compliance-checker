@@ -1,0 +1,136 @@
+{
+  "date": "2026-06-03 15:34",
+  "version": "1.0",
+  "model": "claude-haiku-4-5-20251001",
+  "contracts_tested": 3,
+  "ground_truth_type": "human-labeled violations",
+  "aggregate_scores": {
+    "violation_detection_rate": 1.0,
+    "false_positive_rate": 0.067,
+    "false_positive_score": 0.933,
+    "risk_level_accuracy": 0.833
+  },
+  "overall_score": 0.922,
+  "per_test": [
+    {
+      "test_case": "TC01",
+      "name": "Severely Non-Compliant Contract",
+      "elapsed_seconds": 10.1,
+      "scores": {
+        "violation_detection_rate": 1.0,
+        "false_positive_rate": 0.0,
+        "risk_level_correct": true,
+        "risk_level_distance": 0,
+        "risk_score_in_range": true
+      },
+      "details": {
+        "detection": {
+          "detection_rate": 1.0,
+          "caught": 14,
+          "total": 14
+        },
+        "false_positives": {
+          "false_positive_rate": 0.0,
+          "wrongly_flagged": 0,
+          "total": 0
+        },
+        "risk_assessment": {
+          "level_correct": true,
+          "score_in_range": true,
+          "expected_level": "CRITICAL",
+          "actual_level": "CRITICAL",
+          "expected_score_min": 70,
+          "actual_score": 98,
+          "level_distance": 0
+        }
+      },
+      "model_output": {
+        "risk_level": "CRITICAL",
+        "risk_score": 98,
+        "critical_count": 7,
+        "high_count": 2,
+        "medium_count": 0
+      }
+    },
+    {
+      "test_case": "TC02",
+      "name": "Mostly Compliant Contract with Subtle Issues",
+      "elapsed_seconds": 4.2,
+      "scores": {
+        "violation_detection_rate": 1.0,
+        "false_positive_rate": 0.0,
+        "risk_level_correct": true,
+        "risk_level_distance": 0,
+        "risk_score_in_range": false
+      },
+      "details": {
+        "detection": {
+          "detection_rate": 1.0,
+          "caught": 2,
+          "total": 2
+        },
+        "false_positives": {
+          "false_positive_rate": 0.0,
+          "wrongly_flagged": 0,
+          "total": 9
+        },
+        "risk_assessment": {
+          "level_correct": true,
+          "score_in_range": false,
+          "expected_level": "MEDIUM",
+          "actual_level": "MEDIUM",
+          "expected_score_min": 30,
+          "actual_score": 25,
+          "level_distance": 0
+        }
+      },
+      "model_output": {
+        "risk_level": "MEDIUM",
+        "risk_score": 25,
+        "critical_count": 1,
+        "high_count": 0,
+        "medium_count": 1
+      }
+    },
+    {
+      "test_case": "TC03",
+      "name": "Contract with Hidden Fee Trap",
+      "elapsed_seconds": 6.4,
+      "scores": {
+        "violation_detection_rate": 1.0,
+        "false_positive_rate": 0.2,
+        "risk_level_correct": false,
+        "risk_level_distance": 1,
+        "risk_score_in_range": false
+      },
+      "details": {
+        "detection": {
+          "detection_rate": 1.0,
+          "caught": 3,
+          "total": 3
+        },
+        "false_positives": {
+          "false_positive_rate": 0.2,
+          "wrongly_flagged": 2,
+          "total": 10
+        },
+        "risk_assessment": {
+          "level_correct": false,
+          "score_in_range": false,
+          "expected_level": "HIGH",
+          "actual_level": "MEDIUM",
+          "expected_score_min": 50,
+          "actual_score": 28,
+          "level_distance": 1
+        }
+      },
+      "model_output": {
+        "risk_level": "MEDIUM",
+        "risk_score": 28,
+        "critical_count": 1,
+        "high_count": 2,
+        "medium_count": 1
+      }
+    }
+  ]
+}
