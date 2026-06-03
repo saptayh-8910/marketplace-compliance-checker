@@ -1,4 +1,4 @@
-# ⚖️ Marketplace Compliance Checker
+# Marketplace Compliance Checker
 
 > Upload a seller contract PDF → AI checks it against Rakuten, Mercari, and Amazon Japan rules → get a risk score, flagged clauses, and fix recommendations.
 
@@ -6,13 +6,13 @@
 
 ---
 
-## 🎯 Live Demo
+## Live Demo
 
 ⚖️ **[Try the Compliance Checker →](https://marketplace-compliance-checker.streamlit.app)**
 
 ---
 
-## 📊 Evaluation
+## Evaluation
 
 Tested on 3 contracts with planted violations ranging from subtle to severe.
 
